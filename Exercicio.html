@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Atividade 1
+        var n1 = parseFloat(prompt("Digite um numero"));
+        var n2 = parseFloat(prompt("Digite outro numero"));
+        var n3 = (n1-n2);
+        var n4 = (n2-n1);       
+ 
+        if(n1>n2){
+            alert(n1+" tem a diferença de "+n2+" por "+n3)
+        } else if(n2>n1){
+            alert(n1+" tem a diferença de "+n2+" por "+n4)
+        } else{
+            alert("Não há diferença")
+        }
+        
+        //Atividade 2
+        var n1 = parseFloat(prompt("Digite um numero."));
+        var n2 = (n1*2)
+
+        alert(n2)
+        
+        //Atividade 3
+        var x = parseFloat(prompt("Digite o valor de X"));
+        var y = parseFloat(prompt("Digite o valor de Y"));
+
+        if(x>0 && y>0){
+            alert("1° Quadrante")
+        } else if(x<0 && y<0){
+            alert("3° Quadrante")
+        } else if(x<0 && y>0){
+            alert("2° Quadrante")
+        } else{
+            alert("4° Quadrante")
+        }
+        
+        //Atividade 5
+        var n1 = parseFloat(prompt("Digite um numero"));
+        var n2 = parseFloat(prompt("Digite outro numero"));       
+ 
+        if(n1<n2){
+            alert(n1+" é menor que "+n2)
+        } else if(n2<n1){
+            alert(n2+" é menor que "+n1)
+        } else{
+            alert("Não há diferença")
+        }
+
+
+        //Atividade 6
+        var n = parseFloat(prompt("Digite um número:"));
+        var total=n/2;
+
+        if(n>0){
+            alert(n+" é positivo.")
+        } else if(n<0){
+            alert(n+" é negativo")
+        }
+        
+        if(n%2 == 0){
+            alert(n+" e par")
+        } else{
+            alert(" e impar")
+        }
+
+        //Atividade 7
+        var lado1 = parseFloat(prompt("Digite o comprimento do primeiro lado:"));
+        var lado2 = parseFloat(prompt("Digite o comprimento do segundo lado:"));
+        var lado3 = parseFloat(prompt("Digite o comprimento do terceiro lado:"));
+
+        if(lado1 == lado2 && lado2 == lado3){
+            alert(" É um triângulo Equilátero.")
+        } else if(lado1 == lado2 || lado1 == lado3 || lado2 == lado3){
+            alert(" É um triângulo Isosceles.")
+        }else{
+            alert(" É um triângulo Escaleno.")
+        }        
+
+
+        //Atividade 8
+        var emailc = "nome@site";
+        var senhac = "admin";
+        var email = prompt("Digite seu e-mail:");
+        var senha = prompt("Digite sua senha:");
+
+
+        if(email === emailc && senha === senhac) {
+            alert("Bem vindo!");
+        } else {
+    
+        let mensagemErro = "";
+
+        if(email !== emailc) {
+            mensagemErro += "E-mail incorreto. ";
+        }
+
+        if(senha !== senhac) {
+            mensagemErro += "Senha incorreta.";
+        }
+
+            alert(mensagemErro.trim());
+        }
+
+
+
+        // Essa é a Atividade 4
+        
+        
+        var idade = parseInt(prompt("Digite sua idade:"), 10); 
+        var altura = parseFloat(prompt("Digite sua altura:"));  
+        var y = 1.65; 
+
+
+        if (idade >= 18 && idade <= 24 && altura === y) {
+             alert("apto");
+        } else if(idade < 18 || idade >24 && altura === y){
+             alert("errado")
+        } else if(idade >= 18 && idade <= 24 && altura < y || altura >y){
+             alert(" errado")
+        } else{
+            alert("Insira novamente.")
+        }
+    </script>
+</body>
+</html>
